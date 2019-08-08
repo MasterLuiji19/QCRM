@@ -1,0 +1,79 @@
+@keyframes background {
+    0% {
+        background-color: var(--background);
+        opacity: 1;
+    }
+    25% {
+        background-color: var(--background);
+        opacity: 0.7;
+    }
+    50% {
+        background-color: var(--background);
+        opacity: 0.4;
+    }
+    75% {
+        background-color: var(--background);
+        opacity: 0,2;
+    }
+    100% {
+        background-color: var(--background);
+        opacity: 0;
+    }
+}
+
+@keyframes card-transform {
+    0% {
+        transform-origin: top;
+        transform: rotateX(-60deg);
+        opacity: 0;
+    }
+    15% {
+        transform-origin: top;
+        transform: rotateX(-40deg);
+        opacity: 0.2;
+    }
+
+    25% {
+        transform-origin: top;
+        transform: rotateX(-38deg);
+        opacity: 0.4;
+    }
+    50% {
+        transform-origin: top;
+        transform: rotateX(-25deg);
+        opacity: 0.7;
+    }
+    75% {
+        transform-origin: top;
+        transform: rotateX(10deg);
+        opacity: 1;
+    }
+    100% {
+        transform-origin: top;
+        transform: rotate(0deg);
+        opacity: 1;
+    }
+}
+
+@keyframes logo-transform {
+    0% {
+        transform: rotateX(60deg);
+        opacity: 0.2;
+    }
+    25% {
+        transform: rotateX(40deg);
+        opacity: 0.4;
+    }
+    50% {
+        transform: rotateX(30deg);
+        opacity: 0.7;
+    }
+    75% {
+        transform: rotateX(20deg);
+        opacity: 0.9;
+    }
+    100% {
+        transform: rotateX(0deg);
+        opacity: 1;
+    }
+}
