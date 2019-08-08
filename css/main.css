@@ -15,7 +15,7 @@ body {
     align-items: center;
     justify-content: center;
     perspective: 1000px;
-    animation: background 1s ease-in;
+    animation: background 3s ease-in;
 }
 
 :root {
@@ -31,6 +31,7 @@ body {
     width: 360px;
     height: 420px;
     background-color: var(--white);
+    box-shadow: 0 6px 20px -15px;
     animation: card-transform 1s ease-in;
 }
 
@@ -40,7 +41,7 @@ body {
     perspective: 1000px;
 }
 
-.box-white {
+.form__logo {
     width: 100px;
     height: 100px;
     margin: auto;
@@ -53,48 +54,36 @@ body {
     animation: logo-transform 1s linear;
 }
 
-.cub-orange {
+.logo__block {
     width: 28px;
     height: 28px;
-    background-color: #f8911d;
     border-radius: 5px;
     position: absolute;
+    mix-blend-mode: multiply;
+}
+
+.orange {
+    background-color: #f8911d;
     top: 15px;
     left: 30px;
-    mix-blend-mode: multiply;
 }
 
-.cub-pink {
-    width: 28px;
-    height: 28px;
+.pink {
     background-color: #d1369c;
-    border-radius: 5px;
-    position: absolute;
     top: 29px;
     left: 44px;
-    mix-blend-mode: multiply;
 }
 
-.cub-blue {
-    width: 28px;
-    height: 28px;
+.blue {
     background-color: #3e9ffd;
-    border-radius: 5px;
-    position: absolute;
     top: 43px;
     left: 30px;
-    mix-blend-mode: multiply;
 }
 
-.cub-green {
-    width: 28px;
-    height: 28px;
+.green {
     background-color: #4ebf49;
-    border-radius: 5px;
-    position: absolute;
     top: 57px;
     left: 44px;
-    mix-blend-mode: multiply;
 }
 
 .form__general {
