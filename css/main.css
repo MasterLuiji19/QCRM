@@ -3,14 +3,19 @@
 body {
     margin: 0;
     padding: 0;
+    background-color: var(--white);
+    font-family: var(--Helvetica_Light);
+}
+
+.wrapper {
     background: url(../img/flowers.jpg)no-repeat center;
     background-size: cover;
     height: 100vh;
     display: flex;
     align-items: center;
     justify-content: center;
-    font-family: var(--Helvetica_Light);
     perspective: 1000px;
+    animation: background 1s ease-in;
 }
 
 :root {
@@ -19,7 +24,7 @@ body {
     --black: #000;
     --gray: #7c7c7c;
     --blue: #3e9ffd;
-    --background: #dfe3e3;
+    --checked: #5294fa;
 }
 
 .form-wrapper {
@@ -115,6 +120,11 @@ input:placeholder-shown {
     font-size: 16px;
 }
 
+.checkbox {
+    width: 100%;
+    text-align: left;
+}
+
 input[type="checkbox"] {
     display: none;
 }
@@ -130,7 +140,7 @@ input[type="checkbox"] {
     display: inline-block;
     width: 12px;
     height: 12px;
-    border: 1px solid #636363;
+    border: 1px solid var(--gray);
     border-radius: 2px;
     vertical-align: middle;
     margin-right: 10px;
@@ -139,10 +149,9 @@ input[type="checkbox"] {
 }
 
 input[type="checkbox"]:checked + .checkbox__label::before {
-    content: '✔';
     color: var(--white);
-    background-color: #5294fa;
-    border: 1px solid #5294fa;
+    background: var(--checked) url(data:image/svg+xml;base64,PD94bWwgdmVyc2lvbj0iMS4wIiBlbmNvZGluZz0iVVRGLTgiIHN0YW5kYWxvbmU9Im5vIj8+DQo8c3ZnIHdpZHRoPSIxMiIgaGVpZ2h0PSI5IiB2aWV3Qm94PSIwIDAgMTIgOSIgeG1sbnM9Imh0dHA6Ly93d3cudzMub3JnLzIwMDAvc3ZnIj4NCiAgPHBhdGggZD0iTTQuNTc1IDguOTc3cy0uNDA0LS4wMDctLjUzNi0uMTY1TC4wNTcgNS42NGwuODI5LTEuMjI3TDQuNDcgNy4yNjggMTAuOTIxLjA4NmwuOTIzIDEuMTAzLTYuODYzIDcuNjRjLS4xMzQtLjAwMy0uNDA2LjE0OC0uNDA2LjE0OHoiIGZpbGw9IiNGRkYiIGZpbGwtcnVsZT0iZXZlbm9kZCIvPg0KPC9zdmc+) 50% 40% no-repeat;
+    border: 1px solid var(--checked);
 }
 
 .form__button {

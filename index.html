@@ -6,6 +6,7 @@
     <link rel="stylesheet" href="css/main.css">
 </head>
 <body>
+<div class="wrapper">
     <div class="form-wrapper">
         <form class="form">
             <div class="box-white">
@@ -18,10 +19,14 @@
             <legend class="form__title">by SupportYourApp</legend>
             <input type="input" placeholder="Login">
             <input type="password" placeholder="Password">
-            <input class="checkbox" type="checkbox" id="checked">
-            <label class="checkbox__label" for="checked">Remember me on this computer</label>
+            <div class="checkbox">
+                <input class="checkbox__input" type="checkbox" id="checked">
+                <label class="checkbox__label" for="checked">Remember me on this computer</label>
+            </div>
+
             <button class="form__button">Sign In to QCRM</button>
         </form>
     </div>
+</div>
 </body>
 </html>
