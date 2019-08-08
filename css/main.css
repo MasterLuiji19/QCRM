@@ -25,6 +25,9 @@ body {
     --gray: #7c7c7c;
     --blue: #3e9ffd;
     --checked: #5294fa;
+    --orange: #f8911d;
+    --pink: #d1369c;
+    --green: #4ebf49;
 }
 
 .form-wrapper {
@@ -63,25 +66,25 @@ body {
 }
 
 .orange {
-    background-color: #f8911d;
+    background-color: var(--orange);
     top: 15px;
     left: 30px;
 }
 
 .pink {
-    background-color: #d1369c;
+    background-color: var(--pink);
     top: 29px;
     left: 44px;
 }
 
 .blue {
-    background-color: #3e9ffd;
+    background-color: var(--blue);
     top: 43px;
     left: 30px;
 }
 
 .green {
-    background-color: #4ebf49;
+    background-color: var(--green);
     top: 57px;
     left: 44px;
 }
@@ -101,8 +104,8 @@ input {
     width: 100%;
     height: 40px;
     padding-left: 10px;
-    padding-right: -10px;
     margin-bottom: 20px;
+    box-sizing: border-box;
 }
 
 input:placeholder-shown {
