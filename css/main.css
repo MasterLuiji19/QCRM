@@ -15,7 +15,7 @@ body {
     align-items: center;
     justify-content: center;
     perspective: 1000px;
-    animation: background 3s ease-in;
+    animation: background 1s ease-in;
 }
 
 :root {
