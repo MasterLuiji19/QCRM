@@ -10,3 +10,4 @@ This project is designed to explore
 
 - HTML
 - CSS
+- Animations
